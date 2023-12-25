@@ -8,7 +8,7 @@ public final class Subtask extends CompositeTask<AbstractLeafTask> {
     }
 
     @Override
-    public void perform(final AbstractLeafTask leafTask) {
+    protected void perform(final AbstractLeafTask leafTask) {
         leafTask.perform();
     }
 
